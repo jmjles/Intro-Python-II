@@ -5,5 +5,6 @@ class Player(Room):
     def __init__(self,name,room):
         self.name = name
         self.current_room = room
+        self.inventory = []
     def __str__(self):
         return f'{self.name} is located at: {self.current_room}'
